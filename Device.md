@@ -1,4 +1,4 @@
-﻿<img src="./assets/HarpLogo.svg" width="200">
+<img src="./assets/HarpLogo.svg" width="200">
 
 # Common Registers and Operation (Device 1.2)
 
@@ -141,7 +141,7 @@ gantt
 ```
 
 
-#### **`R_OPERATION_CTRL` (U16) – Operation mode configuration**
+#### **`R_OPERATION_CTRL` (U8) – Operation mode configuration**
 
 Address: `010`
 
@@ -453,3 +453,6 @@ When the value of this register is above 0 (zero), the device’s timestamp will
 - v1.9.1
   * Remove table of contents to avoid redundancy with doc generators.
   * Minor improvements to clarity of introduction.
+
+- v1.9.2
+  * Fix typo in `OPERATION_CTRL` register data type (U16 -> U8)
